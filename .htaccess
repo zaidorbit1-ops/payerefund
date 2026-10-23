@@ -1,0 +1,16 @@
+RewriteEngine On
+
+DirectoryIndex index.php
+
+<IfModule mod_headers.c>
+    Header unset Cache-Control
+    Header always unset Cache-Control
+    Header always set Cache-Control "no-store, no-cache, must-revalidate, max-age=0, s-maxage=0"
+    Header always set Pragma "no-cache"
+    Header always set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+    Header always unset ETag
+</IfModule>
+
+FileETag None
+
+RewriteRule ^(about|services|faqs|contact|privacy|terms)$ $1.php [L,NC]

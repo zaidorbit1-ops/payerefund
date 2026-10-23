@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PAYE Refund Ireland - Clear PAYE Tax Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#f9f9f9",
+            "on-secondary-container": "#00714d",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e2e2e2",
+            "on-secondary-fixed": "#002113",
+            "surface-container-highest": "#e2e2e2",
+            "outline": "#73777d",
+            "tertiary-container": "#351e03",
+            "text-charcoal": "#1F2937",
+            "surface": "#f9f9f9",
+            "on-primary-container": "#758da4",
+            "on-tertiary-container": "#a8845f",
+            "on-primary-fixed": "#021d30",
+            "on-primary-fixed-variant": "#32495e",
+            "primary-fixed-dim": "#b1c9e2",
+            "error-container": "#ffdad6",
+            "secondary": "#006c49",
+            "inverse-primary": "#b1c9e2",
+            "on-tertiary-fixed": "#2c1700",
+            "secondary-container": "#6cf8bb",
+            "on-secondary-fixed-variant": "#005236",
+            "on-error-container": "#93000a",
+            "primary-container": "#0b2538",
+            "surface-tint": "#4a6176",
+            "error": "#ba1a1a",
+            "on-surface-variant": "#43474c",
+            "surface-white": "#FFFFFF",
+            "on-surface": "#1a1c1c",
+            "secondary-fixed-dim": "#4edea3",
+            "inverse-on-surface": "#f1f1f1",
+            "surface-bright": "#f9f9f9",
+            "on-tertiary": "#ffffff",
+            "accent-gold": "#FFD700",
+            "outline-variant": "#c3c7cd",
+            "tertiary-fixed-dim": "#e9bf96",
+            "inverse-surface": "#2f3131",
+            "secondary-fixed": "#6ffbbe",
+            "on-background": "#1a1c1c",
+            "surface-container": "#eeeeee",
+            "tertiary": "#180a00",
+            "on-tertiary-fixed-variant": "#5e4122",
+            "surface-container-low": "#f3f3f3",
+            "surface-container-high": "#e8e8e8",
+            "on-primary": "#ffffff",
+            "primary": "#000f1c",
+            "on-secondary": "#ffffff",
+            "surface-dim": "#dadada",
+            "tertiary-fixed": "#ffdcbc",
+            "primary-fixed": "#cde5ff",
+            "on-error": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin": "2rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Inter"],
+            "label-sm": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "body-sm": ["Inter"],
+            "headline-sm": ["Inter"],
+            "body-md": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-inverse-surface border-b border-outline-variant shadow-sm dark:shadow-none sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between w-full">
+<div class="flex items-center space-x-3">
+<a class="text-headline-md font-headline-md font-extrabold text-primary dark:text-inverse-primary tracking-tight" href="#">PAYE Refund</a>
+</div>
+<nav class="hidden md:flex items-center space-x-6">
+<a class="text-primary dark:text-inverse-primary font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md transition-all duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary text-label-md font-label-md transition-all duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary text-label-md font-label-md transition-all duration-200" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary text-label-md font-label-md transition-all duration-200" href="#">FAQs</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary text-label-md font-label-md transition-all duration-200" href="#">Privacy & Cookie Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary text-label-md font-label-md transition-all duration-200" href="#">Terms of Business</a>
+</nav>
+<div class="hidden md:flex items-center">
+<a class="bg-primary-container hover:bg-primary text-on-primary px-5 py-2.5 rounded-lg text-label-md font-label-md transition-all duration-200 active:scale-98 shadow-sm" href="#start-check">Start My Refund Check</a>
+</div>
+<div class="md:hidden flex items-center">
+<button aria-label="Open Menu" class="text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative bg-surface-container-low dark:bg-inverse-surface py-16 md:py-24 overflow-hidden border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7 space-y-6">
+<div class="inline-flex items-center space-x-2 bg-surface-container-highest px-3 py-1 rounded-full border border-outline-variant">
+<span class="material-symbols-outlined text-secondary text-sm" data-weight="fill">verified</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Irish PAYE tax support</span>
+</div>
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight">
+          Clear PAYE tax support, backed by an established Irish accountancy company.
+        </h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl">
+          PAYE Refund is provided by ACCTS & TECHS LIMITED. We help PAYE workers review tax records, identify potentially unclaimed credits and reliefs, and prepare accurate Income Tax Returns for submission to Revenue where instructed.
+        </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
+<a class="bg-accent-gold hover:bg-yellow-400 text-primary px-8 py-4 rounded-xl text-label-md font-label-md font-bold text-center transition-all duration-200 shadow-md active:scale-98" href="#start-check">
+            Start My Refund Check
+          </a>
+<a class="bg-surface-white hover:bg-surface-container border border-outline-variant text-primary dark:text-inverse-primary px-6 py-4 rounded-xl text-label-md font-label-md font-medium text-center transition-all duration-200" href="#how-it-works">
+            See how it works
+          </a>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="bg-surface-white dark:bg-surface-container p-6 md:p-8 rounded-xl border border-outline-variant shadow-lg space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant pb-4">
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Professional Fee</p>
+<p class="text-headline-md font-headline-md text-primary dark:text-inverse-primary">€150 + VAT</p>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm font-medium">No Win, No Fee</span>
+</div>
+<ul class="space-y-3 text-body-sm text-on-surface-variant">
+<li class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span>
+<span>Payable only where Revenue issues a refund</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span>
+<span>Revenue pays your refund directly to you</span>
+</li>
+<li class="flex items-start space-x-3">
+<span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span>
+<span>Fully compliant with Irish tax regulations</span>
+</li>
+</ul>
+<div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant text-xs text-on-surface-variant">
+<span class="font-bold text-primary">Secure First Step:</span> Do not send PPS numbers, bank details, Revenue login details or sensitive documents through the public form.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Fee and Trust Information Strip -->
+<section class="bg-primary-container text-on-primary py-8">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-6 items-center divide-y md:divide-y-0 md:divide-x divide-outline-variant/30">
+<div class="flex items-center space-x-4 pt-4 md:pt-0">
+<span class="material-symbols-outlined text-accent-gold text-3xl" data-weight="fill">payments</span>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-inverse-primary">Transparent Fee</h4>
+<p class="text-body-sm text-on-primary-container">€150 plus VAT per person</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 pt-4 md:pt-0 md:pl-6">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl" data-weight="fill">verified_user</span>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-inverse-primary">Contingent Pricing</h4>
+<p class="text-body-sm text-on-primary-container">No fee unless Revenue issues a refund</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 pt-4 md:pt-0 md:pl-6">
+<span class="material-symbols-outlined text-accent-gold text-3xl" data-weight="fill">account_balance</span>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-inverse-primary">Direct Payouts</h4>
+<p class="text-body-sm text-on-primary-container">Revenue pays you directly</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 pt-4 md:pt-0 md:pl-6">
+<span class="material-symbols-outlined text-secondary-fixed text-3xl" data-weight="fill">lock</span>
+<div>
+<h4 class="text-label-md font-label-md font-bold text-inverse-primary">Data Protection</h4>
+<p class="text-body-sm text-on-primary-container">Secure intake without sensitive records</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Common Refund Areas ('What we review') -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Tax Credits & Reliefs</span>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary mt-2">What we review</h2>
+</div>
+<a class="mt-4 md:mt-0 text-label-md font-label-md text-primary font-bold hover:underline inline-flex items-center space-x-1" href="#">
+<span>View all services</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 space-y-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" data-weight="fill">medical_services</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Medical and dental</h3>
+<p class="text-body-sm text-on-surface-variant">Review potentially qualifying expenses including non-routine dental treatments, consultant visits, and prescription costs.</p>
+<div class="pt-2">
+<span class="text-label-sm font-label-sm text-secondary font-medium">Relief up to 20% standard rate</span>
+</div>
+</div>
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 space-y-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" data-weight="fill">home</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Rent Tax Credit</h3>
+<p class="text-body-sm text-on-surface-variant">Check whether qualifying rent payments for private rented accommodation, student accommodation, or parent-paid rent apply.</p>
+<div class="pt-2">
+<span class="text-label-sm font-label-sm text-secondary font-medium">Up to €1,000 per year</span>
+</div>
+</div>
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant shadow-sm hover:shadow-md transition-all duration-200 space-y-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined" data-weight="fill">laptop_mac</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Remote working</h3>
+<p class="text-body-sm text-on-surface-variant">Review qualifying utility costs (electricity, heating, and broadband) for designated days worked from home under Irish tax rules.</p>
+<div class="pt-2">
+<span class="text-label-sm font-label-sm text-secondary font-medium">Pro-rata daily relief</span>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works ('Four clear steps') -->
+<section class="py-20 bg-surface-container-low border-y border-outline-variant" id="how-it-works">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Simple Process</span>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary">Four clear steps</h2>
+<p class="text-body-md text-on-surface-variant">Our structured procedure ensures your review is handled accurately and securely.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant space-y-4 relative">
+<div class="text-headline-lg font-headline-lg text-outline-variant/60 absolute top-4 right-4">01</div>
+<div class="w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-label-md">1</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Complete the initial form</h3>
+<p class="text-body-sm text-on-surface-variant">Submit basic details securely online without exposing sensitive tax login credentials.</p>
+</div>
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant space-y-4 relative">
+<div class="text-headline-lg font-headline-lg text-outline-variant/60 absolute top-4 right-4">02</div>
+<div class="w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-label-md">2</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">We review your circumstances</h3>
+<p class="text-body-sm text-on-surface-variant">Our professional team analyses your records against potential credits and reliefs.</p>
+</div>
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant space-y-4 relative">
+<div class="text-headline-lg font-headline-lg text-outline-variant/60 absolute top-4 right-4">03</div>
+<div class="w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-label-md">3</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">You approve the submission</h3>
+<p class="text-body-sm text-on-surface-variant">Review our findings and authorize submission of your Income Tax Return to Revenue.</p>
+</div>
+<div class="bg-surface-white p-6 rounded-xl border border-outline-variant space-y-4 relative">
+<div class="text-headline-lg font-headline-lg text-outline-variant/60 absolute top-4 right-4">04</div>
+<div class="w-10 h-10 bg-primary text-on-primary rounded-full flex items-center justify-center font-bold text-label-md">4</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Revenue processes the return</h3>
+<p class="text-body-sm text-on-surface-variant">Revenue issues approved refunds directly to your nominated bank account.</p>
+</div>
+</div>
+<div class="mt-10 p-4 bg-surface-white rounded-lg border border-outline-variant text-body-sm text-on-surface-variant max-w-3xl mx-auto flex items-start space-x-3">
+<span class="material-symbols-outlined text-error mt-0.5" data-weight="fill">info</span>
+<p><strong class="text-primary font-semibold">Important disclaimer:</strong> A review may identify a refund, no change or an underpayment. No refund or processing time can be guaranteed.</p>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+<div class="bg-surface-white rounded-2xl border border-outline-variant p-8 md:p-12 shadow-sm grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="space-y-4">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Fixed fee</span>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary">€150 plus VAT per person</h2>
+<p class="text-body-md text-on-surface-variant">
+          Payable only where Revenue issues a refund. Invoiced separately, never deducted from Revenue payment. This ensures complete transparency and compliance with professional standards.
+        </p>
+<div class="pt-4 flex items-center space-x-6">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">check</span>
+<span class="text-body-sm font-medium">No hidden fees</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary" data-weight="fill">check</span>
+<span class="text-body-sm font-medium">Separate invoicing</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant flex flex-col items-center justify-center text-center space-y-4">
+<p class="text-label-md font-label-md text-on-surface-variant">Display Price</p>
+<div class="text-4xl md:text-5xl font-extrabold text-primary">€150 + VAT</div>
+<p class="text-body-sm text-on-surface-variant">Contingent upon successful Revenue refund issuance.</p>
+<a class="w-full bg-primary-container hover:bg-primary text-on-primary py-3 rounded-lg text-label-md font-label-md font-bold transition-all duration-200" href="#start-check">
+          Get Started Today
+        </a>
+</div>
+</div>
+</section>
+<!-- Four-Year Rule Section -->
+<section class="py-16 bg-surface-container-high border-y border-outline-variant">
+<div class="max-w-4xl mx-auto px-6 text-center space-y-4">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Important timing</span>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary">Claims are generally limited to four years</h2>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+        Revenue generally requires refund claims to be made within four years after the end of the relevant tax year. Ensure older entitlements are reviewed promptly before they expire.
+      </p>
+</div>
+</section>
+<!-- Official Information Section -->
+<section class="py-20 max-w-7xl mx-auto px-6">
+<div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Resources</span>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary">Official Information</h2>
+<p class="text-body-md text-on-surface-variant">Verified links and guidance from statutory bodies in Ireland.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<a class="bg-surface-white p-6 rounded-xl border border-outline-variant hover:border-primary transition-all duration-200 space-y-3 group" href="#">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary">description</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">open_in_new</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">PAYE Income Tax Return Revenue guidance</h3>
+<p class="text-body-sm text-on-surface-variant">Understand statutory obligations and how returns are processed by Revenue.</p>
+</a>
+<a class="bg-surface-white p-6 rounded-xl border border-outline-variant hover:border-primary transition-all duration-200 space-y-3 group" href="#">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">open_in_new</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Using a tax agent Revenue information</h3>
+<p class="text-body-sm text-on-surface-variant">Guidelines on engaging authorized tax practitioners for your submissions.</p>
+</a>
+<a class="bg-surface-white p-6 rounded-xl border border-outline-variant hover:border-primary transition-all duration-200 space-y-3 group" href="#">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary">gavel</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">open_in_new</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Your data rights Data Protection Commission guidance</h3>
+<p class="text-body-sm text-on-surface-variant">Information on privacy, GDPR compliance, and client data security.</p>
+</a>
+</div>
+</section>
+<!-- Blog Section -->
+<section class="py-20 bg-surface-container-low border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-wider">Editorial Insights</span>
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-primary mt-2">From the PAYE Refund blog</h2>
+</div>
+<a class="mt-4 md:mt-0 text-label-md font-label-md text-primary font-bold hover:underline inline-flex items-center space-x-1" href="#">
+<span>Read all articles</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="bg-surface-white rounded-xl border border-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 flex flex-col">
+<div class="h-48 bg-cover bg-center" data-alt="A brightly lit modern medical clinic consultation room with clean white walls and a professional stethoscope on a desk, representing health expenses tax relief in Ireland." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDD_kE6W7VQTTqeRThehkXRdgk7u3yF1URMpT-MFpkHHMaZx-gaub57ybAbiypSX9FdurD2Xion1k-vfd8F25kXmUyMAL0rt3qYfM9FlcW4PM1xiG6Jk4KXyEn-9RPver9ehm5zo_DyIi__U6pyvDo0ZvrTjHpsuSI5GG0m8_ZqgmNI51EcayEL-cN8bZxEyIp_4J4PEvPqjB8PkkWoiNthZAsOBWOpSlCfuyZWfKsW9VC67lq4Bnk')"></div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-secondary">Health Expenses</span>
+<h3 class="text-headline-sm font-headline-sm text-primary">Claiming Health & Dental Expenses: What Qualifies?</h3>
+<p class="text-body-sm text-on-surface-variant">A comprehensive look at non-routine dental, consultant fees, and how to maximize your relief claim.</p>
+</div>
+<a class="text-label-md font-label-md text-primary font-bold inline-flex items-center space-x-1 hover:underline" href="#">
+<span>Read article</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<article class="bg-surface-white rounded-xl border border-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 flex flex-col">
+<div class="h-48 bg-cover bg-center" data-alt="A cozy modern apartment interior with warm lighting, large windows, and tasteful minimalist decor, illustrating the Rent Tax Credit available for private renters in Ireland." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8gDWTz5ejh2cISRVrusjHwXKwyXgGrzOYwcxnPFLk98AlDwgNkTWtXvjkBUrRDJt4FHAR3uUMyrkYBiDw8GwRfG0Jg0JofSYCQumm0o_rhKIIKKVJ-5UExQMZmykpK0eXBBLVE9t-v58xMIAGRVarxqbBczlkqclCdoEvt4DgObqSozP8wxSDcKteOpgE_GmNLvBikeXh6znGwySSDeAbuW-W3K7JILHLGISENIZ9Kkfj4cF8Id4')"></div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-secondary">Rent Tax Credit</span>
+<h3 class="text-headline-sm font-headline-sm text-primary">Understanding the Rent Tax Credit in Ireland</h3>
+<p class="text-body-sm text-on-surface-variant">Everything private renters need to know about qualifying criteria, student rentals, and claim limits.</p>
+</div>
+<a class="text-label-md font-label-md text-primary font-bold inline-flex items-center space-x-1 hover:underline" href="#">
+<span>Read article</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+<article class="bg-surface-white rounded-xl border border-outline-variant overflow-hidden shadow-sm hover:shadow-md transition-all duration-200 flex flex-col">
+<div class="h-48 bg-cover bg-center" data-alt="A neat home office workspace with a laptop, notebook, and a cup of coffee next to a sunlit window, representing remote working relief for utility expenses in Ireland." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAAQE4rSwJaV4F0V2V4yy8BQmlV3Zw-s9v7DF9vCDmGhbFg7H37BO9HYwQl8Z9r0qURfw2xhNcX0xqOp3fzdeFbgWu_J118_lMZgtxEt4mfU6ZqmdecmCq-N_X6Ltd3A8tahS2MWBrxMmXBSP43udHn6QX41MH7t1CvoF1Duqn0ifLil5EoBjZM5b0ka_Jvl47Bct9MLhPiiwbbCepyGHx2PgwzBhx0EdLuZjoySdMhdv9-n7euaJw')"></div>
+<div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+<div class="space-y-2">
+<span class="text-label-sm font-label-sm text-secondary">Remote Working</span>
+<h3 class="text-headline-sm font-headline-sm text-primary">Remote Working Relief: Claiming Utility Costs</h3>
+<p class="text-body-sm text-on-surface-variant">How to calculate broadband, electricity, and heating expenses for days worked from home.</p>
+</div>
+<a class="text-label-md font-label-md text-primary font-bold inline-flex items-center space-x-1 hover:underline" href="#">
+<span>Read article</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Final CTA & Complete Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container border-t border-outline-variant" id="start-check">
+<!-- Final CTA Section Banner -->
+<div class="bg-primary-container text-on-primary py-16">
+<div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+<h2 class="text-headline-md md:text-headline-lg font-headline-lg text-inverse-primary">Ready to check your PAYE tax records?</h2>
+<p class="text-body-lg text-on-primary-container max-w-2xl mx-auto">
+          Start your review securely today with ACCTS & TECHS LIMITED. Professional support backed by qualified Irish accountants.
+        </p>
+<div class="pt-2">
+<a class="bg-accent-gold hover:bg-yellow-400 text-primary px-8 py-4 rounded-xl text-label-md font-label-md font-bold inline-block transition-all duration-200 shadow-md" href="#">
+            Start My Refund Check
+          </a>
+</div>
+</div>
+</div>
+<!-- Footer Content -->
+<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col items-center justify-center w-full text-center space-y-6">
+<div class="text-headline-sm font-headline-sm font-bold text-primary dark:text-inverse-primary tracking-tight">PAYE Refund</div>
+<div class="flex flex-wrap justify-center gap-6 text-label-md font-label-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-200" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-200" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-200" href="#">FAQs</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-200" href="#">Privacy & Cookie Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-all duration-200" href="#">Terms of Business</a>
+</div>
+<div class="max-w-3xl text-body-sm text-on-surface-variant space-y-2">
+<p class="font-medium text-primary dark:text-inverse-primary">ACA | CPA (Ireland) | ACA (ICAEW)</p>
+<p>© 2026 PAYE Refund. All rights reserved. Company No. 494758. Registered Office: Unit F13, Maynooth Business Campus, Co. Kildare, Ireland. Contact: 045 254 213 | info@payerefund.ie</p>
+</div>
+</div>
+</footer>
+</body></html>
